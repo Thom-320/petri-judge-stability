@@ -1,0 +1,37 @@
+{
+ "repo": "https://github.com/meridianlabs-ai/inspect_petri",
+ "branch": "petri-v2",
+ "commit": "f02b3ec70a6b9c2a1a7da172b2f3f69a1e1b0585",
+ "licence": "MIT (Copyright (c) 2025 Safety Research)",
+ "note": "Verbatim copies of the pinned files. Not imported at runtime except prompts.py (pure literals). The ports in petri_v2/view.py and petri_v2/parse.py are tested against these files and against the live vendor clone.",
+ "files": {
+  "judge.py": {
+   "upstream_path": "src/petri/scorers/judge.py",
+   "sha256": "a2b70206f5088bf2626eb4fcfebdb2a66e2e7de40ee9b81f526cb7d445f642ac"
+  },
+  "prompts.py": {
+   "upstream_path": "src/petri/scorers/prompts.py",
+   "sha256": "ada1b024f1932c279239f9cb7e4e61f0380c81f4be69bfe83ec9f0beb9a49da3"
+  },
+  "transcript.py": {
+   "upstream_path": "src/petri/transcript/transcript.py",
+   "sha256": "96dc43595d1a1327573aa7e35cd946db35fa3fe53e32a16a31294204c65ac48b"
+  },
+  "utils.py": {
+   "upstream_path": "src/petri/utils.py",
+   "sha256": "acd61a2e8e32dec52f041df47bd1816f929717e128c20d9616fb802ca27f1d39"
+  },
+  "xml_messages.py": {
+   "upstream_path": "src/petri/formatting/xml_messages.py",
+   "sha256": "a30210259f2f4e1929cc516af00345d8798d60c4e1e250b45161e8cdd3bfa324"
+  },
+  "messages.py": {
+   "upstream_path": "src/petri/formatting/messages.py",
+   "sha256": "9945deaa306e4e9548626413e95c0f38d40aa397add407ce502d6a9eddad3d8b"
+  },
+  "LICENSE": {
+   "upstream_path": "LICENSE",
+   "sha256": "69ff9bc06b73c87aa8c0e3f84807ab5ed09db45e519d84634f643a00ebf22724"
+  }
+ }
+}

@@ -1,0 +1,29 @@
+petri-judge-stability
+Copyright (c) 2026 Thomas Chisica Londoño. Original code is released under the MIT License (see LICENSE).
+
+This repository includes or derives from the following third-party material.
+
+1. inspect_petri (Petri alignment-auditing framework)
+   https://github.com/meridianlabs-ai/inspect_petri, branch petri-v2, commit f02b3ec70a6b9c2a1a7da172b2f3f69a1e1b0585
+   License: MIT. Copyright (c) 2025 Safety Research.
+   - petri_v2/pinned/f02b3ec/: verbatim copies of judge.py, prompts.py, transcript.py, utils.py,
+     xml_messages.py, messages.py and the upstream LICENSE (hashes in PIN.json).
+   - petri_v2/prompts.py, petri_v2/view.py, petri_v2/parse.py: dependency-free ports of the files above.
+   The upstream MIT notice is kept in petri_v2/pinned/f02b3ec/LICENSE and applies to these files.
+   Petri was originally released at https://github.com/safety-research/petri (MIT; current notice:
+   Copyright (c) 2025 Kai Fronsdal, Copyright (c) 2026 Meridian Labs).
+
+2. Petri Synthetic Calibration Corpus
+   https://huggingface.co/datasets/adlnk/petri-synthetic-transcripts (sha f2fd5fe4)
+   License: CC-BY-4.0. Transcripts are NOT included; pilot/scripts/fetch_hf.py downloads them.
+   pilot/sample_meta.json, results/meta_260.json and results/thinking_traces_260.json contain
+   file names, IDs, planted labels and counts derived from the corpus manifest and files.
+
+3. Judge outputs
+   The pilot's judges were Muse Spark 1.3 Contributor, MiMo-V2.6-Flash and DeepSeek V4.1 Flash.
+   Their generated text is not redistributed. pilot/scores_pilot120.jsonl holds parsed scores,
+   parse and call status, token usage and call metadata (IDs, latency, output lengths in
+   characters), with no generated text.
+
+Third-party names and model names are used for identification only. This project is not affiliated
+with or endorsed by Anthropic, Safety Research, Meridian Labs or any model provider.

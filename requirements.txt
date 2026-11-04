@@ -1,0 +1,13 @@
+# Runtime (runners, estimator, analysis). Tested with Python 3.13.
+numpy>=2.0
+scipy>=1.13
+pandas>=2.0
+matplotlib>=3.8
+PyYAML>=6.0
+jsonpatch>=1.33
+tiktoken>=0.7
+pytest>=8.0
+# Optional, test-only: run the live Petri code from vendor/ for the equivalence tests
+# (otherwise those tests are skipped and the committed fingerprints are used).
+# inspect_ai
+# rapidfuzz

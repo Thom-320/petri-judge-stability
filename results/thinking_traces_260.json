@@ -1,0 +1,56 @@
+{
+ "source": "adlnk/petri-synthetic-transcripts (CC-BY-4.0); counts only",
+ "by_target": {
+  "deepseek_v31": {
+   "all_260": {
+    "n": 100,
+    "structured_reasoning": 0,
+    "intext_thinking": 26
+   },
+   "pilot_120": {
+    "n": 46,
+    "structured_reasoning": 0,
+    "intext_thinking": 15
+   },
+   "confirmatory_140": {
+    "n": 54,
+    "structured_reasoning": 0,
+    "intext_thinking": 11
+   }
+  },
+  "hermes3": {
+   "all_260": {
+    "n": 95,
+    "structured_reasoning": 0,
+    "intext_thinking": 2
+   },
+   "pilot_120": {
+    "n": 44,
+    "structured_reasoning": 0,
+    "intext_thinking": 1
+   },
+   "confirmatory_140": {
+    "n": 51,
+    "structured_reasoning": 0,
+    "intext_thinking": 1
+   }
+  },
+  "mistral_large": {
+   "all_260": {
+    "n": 65,
+    "structured_reasoning": 0,
+    "intext_thinking": 42
+   },
+   "pilot_120": {
+    "n": 30,
+    "structured_reasoning": 0,
+    "intext_thinking": 19
+   },
+   "confirmatory_140": {
+    "n": 35,
+    "structured_reasoning": 0,
+    "intext_thinking": 23
+   }
+  }
+ }
+}

@@ -1,0 +1,153 @@
+# Single source of judge prices for petri_v2/estimate.py and the runners' budget gate.
+# USD per million tokens. Checked 2026-10-09 against the official pages listed per model.
+# "batch" = each provider's Batch API (50% of standard at all three providers on that date).
+# Output prices include reasoning/thinking tokens (billed as output at all three providers).
+# Prompt-caching discounts are NOT applied (conservative).
+checked: "2026-10-09"
+models:
+  claude-opus-4-5-20251101:
+    judge: opus45
+    status: "Active (legacy); retirement not sooner than 2026-11-24"
+    standard: {input: 5.00, output: 25.00}
+    batch: {input: 2.50, output: 12.50}
+    max_output_tokens: 64000
+    sources:
+      - https://platform.claude.com/docs/en/about-claude/pricing
+      - https://platform.claude.com/docs/en/about-claude/model-deprecations
+      - https://platform.claude.com/docs/en/models/opus-4-5/overview
+  claude-opus-5-5:
+    judge: opus55
+    status: "Active (latest); named migration target on the Opus 4.5 page; adaptive thinking only"
+    standard: {input: 4.00, output: 20.00}
+    batch: {input: 2.00, output: 10.00}
+    max_output_tokens: 128000
+    sources:
+      - https://platform.claude.com/docs/en/about-claude/pricing
+      - https://platform.claude.com/docs/en/models/opus-5-5/overview
+  gemini-3-pro-preview:
+    judge: gemini3pro
+    status: "SHUT DOWN 2026-03-09; replacement gemini-3.1-pro-preview. No price row any more."
+    retired: true
+    sources:
+      - https://ai.google.dev/gemini-api/docs/deprecations
+  gemini-3.1-pro-preview:
+    judge: gemini31pro
+    status: "Preview; no shutdown date announced; Batch API supported"
+    tiers:
+      - max_prompt_tokens: 200000
+        standard: {input: 2.00, output: 12.00}
+        batch: {input: 1.00, output: 6.00}
+      - max_prompt_tokens: 1048576
+        standard: {input: 4.00, output: 18.00}
+        batch: {input: 2.00, output: 9.00}
+    max_output_tokens: 65536
+    sources:
+      - https://ai.google.dev/gemini-api/docs/pricing
+      - https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview
+      - https://ai.google.dev/gemini-api/docs/batch-api
+  gpt-5.1-2025-11-13:
+    judge: gpt51
+    status: "Deprecated; removal from the API 2027-04-01; replacement gpt-6-sol"
+    standard: {input: 1.25, output: 10.00}
+    batch: {input: 0.625, output: 5.00}
+    max_output_tokens: 128000
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.1
+      - https://developers.openai.com/api/docs/pricing
+      - https://developers.openai.com/api/docs/deprecations
+  gpt-6-sol:
+    judge: gpt6sol
+    status: "Active; named replacement for gpt-5.1"
+    # Prompts over 272K input tokens cost 2x input and 1.5x output; judge prompts are far below that.
+    tiers:
+      - max_prompt_tokens: 272000
+        standard: {input: 2.00, output: 10.00}
+        batch: {input: 1.00, output: 5.00}
+      - max_prompt_tokens: 1050000
+        standard: {input: 4.00, output: 15.00}
+        batch: {input: 2.00, output: 7.50}
+    max_output_tokens: 128000
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-6-sol
+      - https://developers.openai.com/api/docs/pricing
+
+  # ---------------- Session 2 (checked 2026-10-10): expanded-panel candidates --------------------
+  # "batch" for providers without a Batch API is the cheapest documented asynchronous/off-peak
+  # price, labelled per row. "derived: true" = discount rule applied by us to a list price (not a
+  # listed number). input_token_multiplier: Claude 4.7+ tokenizer "produces approximately 30% more
+  # tokens for the same text" (pricing page); applied to the o200k approximation.
+  claude-sonnet-5-5:
+    judge: sonnet55
+    checked: "2026-10-10"
+    status: "Active; retirement not sooner than 2027-09-28"
+    standard: {input: 2.00, output: 10.00}
+    batch: {input: 1.00, output: 5.00}
+    input_token_multiplier: 1.3
+    max_output_tokens: 128000
+    sources:
+      - https://platform.claude.com/docs/en/about-claude/pricing
+      - https://platform.claude.com/docs/en/build-with-claude/batch-processing
+      - https://platform.claude.com/docs/en/about-claude/model-deprecations
+  gemini-3.8-flash:
+    judge: gemini38flash
+    checked: "2026-10-10"
+    status: "Stable; prices below hold through 2026-12-31 and double from 2027-01-01 (batch 0.75 / 3.75)"
+    standard: {input: 0.75, output: 3.75}
+    batch: {input: 0.375, output: 1.875}
+    price_from_2027_01_01: {standard: {input: 1.50, output: 7.50}, batch: {input: 0.75, output: 3.75}}
+    max_output_tokens: 65536
+    sources:
+      - https://ai.google.dev/gemini-api/docs/pricing
+      - https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
+  gpt-5.4-mini-2026-03-17:
+    judge: gpt54mini
+    checked: "2026-10-10"
+    status: "Active; no deprecation listed"
+    standard: {input: 0.75, output: 4.50}
+    batch: {input: 0.375, output: 2.25}
+    max_output_tokens: 128000
+    sources:
+      - https://developers.openai.com/api/docs/pricing
+      - https://developers.openai.com/api/docs/models/gpt-5.4-mini
+  deepseek-v4-pro:
+    judge: deepseekv4pro
+    checked: "2026-10-10"
+    status: "Active (DeepSeek-V4-Pro-0813). No Batch API: 'batch' = off-peak synchronous price (half of peak)"
+    standard: {input: 1.32, output: 3.96}
+    batch: {input: 0.66, output: 1.98}
+    batch_mode: "off-peak synchronous"
+    max_output_tokens: 384000
+    sources:
+      - https://api-docs.deepseek.com/quick_start/pricing
+      - https://api-docs.deepseek.com/guides/thinking_mode
+  kimi-k2.6:
+    judge: kimik26
+    checked: "2026-10-10"
+    status: "Active; Batch API at 60% of the standard price"
+    standard: {input: 0.95, output: 4.00}
+    batch: {input: 0.57, output: 2.40}
+    context_tokens: 262144
+    sources:
+      - https://platform.kimi.ai/docs/pricing/chat
+      - https://platform.kimi.ai/docs/pricing/batch
+      - https://platform.kimi.ai/docs/guide/use-batch-api
+  accounts/fireworks/models/qwen3p8-max:
+    judge: qwen38max
+    checked: "2026-10-10"
+    status: "Fireworks serverless; batch 'billed at 50% of serverless pricing' (derived)"
+    standard: {input: 2.00, output: 6.00}
+    batch: {input: 1.00, output: 3.00}
+    derived: true
+    sources:
+      - https://fireworks.ai/models/fireworks/qwen3p8-max
+      - https://docs.fireworks.ai/guides/batch-inference
+  google/gemma-4-31B-it:
+    judge: gemma4
+    checked: "2026-10-10"
+    status: "DeepInfra; batch 'billed at 20% less than the corresponding real-time price' (derived)"
+    standard: {input: 0.20, output: 0.40}
+    batch: {input: 0.16, output: 0.32}
+    derived: true
+    sources:
+      - https://deepinfra.com/google/gemma-4-31B-it
+      - https://docs.deepinfra.com/batch/introduction

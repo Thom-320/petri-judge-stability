@@ -1,0 +1,963 @@
+{
+ "A_J3": {
+  "per_judge": {
+   "opus45": {
+    "model": "claude-opus-4-5-20251101",
+    "provider": "anthropic",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 71.89810999999993,
+     "batch_low": 35.949054999999966,
+     "standard_high": 149.89810999999995,
+     "batch_high": 74.94905499999997,
+     "standard_cap": 435.89810999999986,
+     "batch_cap": 217.94905499999993
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Anthropic",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini31pro": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 32.919244000000006,
+     "batch_low": 16.459622000000003,
+     "standard_high": 70.35924399999998,
+     "batch_high": 35.17962199999999,
+     "standard_cap": 207.63924399999985,
+     "batch_cap": 103.81962199999992
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Google",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gpt51": {
+    "model": "gpt-5.1-2025-11-13",
+    "provider": "openai",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 25.7745275,
+     "batch_low": 12.88726375,
+     "standard_high": 56.97452750000002,
+     "batch_high": 28.48726375000001,
+     "standard_cap": 171.37452750000008,
+     "batch_cap": 85.68726375000004
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "OpenAI",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   }
+  },
+  "total_usd": {
+   "standard_low": 130.59188149999994,
+   "batch_low": 65.29594074999997,
+   "standard_high": 277.23188149999993,
+   "batch_high": 138.61594074999996,
+   "standard_cap": 814.9118814999998,
+   "batch_cap": 407.4559407499999
+  },
+  "requests": 1560,
+  "prices_checked": "2026-10-09",
+  "label": "J = 3: Petri panel only (current design)",
+  "legs": [
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     1,
+     120
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   }
+  ]
+ },
+ "B_J6": {
+  "per_judge": {
+   "opus45": {
+    "model": "claude-opus-4-5-20251101",
+    "provider": "anthropic",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 71.89810999999993,
+     "batch_low": 35.949054999999966,
+     "standard_high": 149.89810999999995,
+     "batch_high": 74.94905499999997,
+     "standard_cap": 435.89810999999986,
+     "batch_cap": 217.94905499999993
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Anthropic",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini31pro": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 32.919244000000006,
+     "batch_low": 16.459622000000003,
+     "standard_high": 70.35924399999998,
+     "batch_high": 35.17962199999999,
+     "standard_cap": 207.63924399999985,
+     "batch_cap": 103.81962199999992
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Google",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gpt51": {
+    "model": "gpt-5.1-2025-11-13",
+    "provider": "openai",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 25.7745275,
+     "batch_low": 12.88726375,
+     "standard_high": 56.97452750000002,
+     "batch_high": 28.48726375000001,
+     "standard_cap": 171.37452750000008,
+     "batch_cap": 85.68726375000004
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "OpenAI",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini38flash": {
+    "model": "gemini-3.8-flash",
+    "provider": "gemini",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 5.813588999999998,
+     "batch_low": 2.906794499999999,
+     "standard_high": 12.113588999999997,
+     "batch_high": 6.056794499999999,
+     "standard_cap": 35.21358899999998,
+     "batch_cap": 17.60679449999999
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "Google",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "deepseekv4pro": {
+    "model": "deepseek-v4-pro",
+    "provider": "deepseek",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 7.275116640000009,
+     "batch_low": 3.6375583200000046,
+     "standard_high": 13.927916640000003,
+     "batch_high": 6.9639583200000015,
+     "standard_cap": 38.32151664000003,
+     "batch_cap": 19.160758320000014
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "DeepSeek",
+    "tier": "open",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "off-peak synchronous"
+   },
+   "kimik26": {
+    "model": "kimi-k2.6",
+    "provider": "moonshot",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 6.523879400000007,
+     "batch_low": 3.91432764,
+     "standard_high": 13.243879399999994,
+     "batch_high": 7.946327639999999,
+     "standard_cap": 37.88387940000001,
+     "batch_cap": 22.730327639999995
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "Moonshot AI",
+    "tier": "open",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   }
+  },
+  "total_usd": {
+   "standard_low": 150.20446653999994,
+   "batch_low": 75.75462120999997,
+   "standard_high": 316.5172665399999,
+   "batch_high": 159.58302120999997,
+   "standard_cap": 926.3308665399998,
+   "batch_cap": 466.9538212099999
+  },
+  "requests": 2400,
+  "prices_checked": "2026-10-09",
+  "label": "J = 6: + Gemini 3.8 Flash, DeepSeek V4 Pro, Kimi K2.6 on the confirmatory 140, R = 2",
+  "legs": [
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     1,
+     120
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "gemini38flash",
+     "deepseekv4pro",
+     "kimik26"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   }
+  ]
+ },
+ "C_J8": {
+  "per_judge": {
+   "opus45": {
+    "model": "claude-opus-4-5-20251101",
+    "provider": "anthropic",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 71.89810999999993,
+     "batch_low": 35.949054999999966,
+     "standard_high": 149.89810999999995,
+     "batch_high": 74.94905499999997,
+     "standard_cap": 435.89810999999986,
+     "batch_cap": 217.94905499999993
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Anthropic",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini31pro": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 32.919244000000006,
+     "batch_low": 16.459622000000003,
+     "standard_high": 70.35924399999998,
+     "batch_high": 35.17962199999999,
+     "standard_cap": 207.63924399999985,
+     "batch_cap": 103.81962199999992
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Google",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gpt51": {
+    "model": "gpt-5.1-2025-11-13",
+    "provider": "openai",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 25.7745275,
+     "batch_low": 12.88726375,
+     "standard_high": 56.97452750000002,
+     "batch_high": 28.48726375000001,
+     "standard_cap": 171.37452750000008,
+     "batch_cap": 85.68726375000004
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "OpenAI",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "sonnet55": {
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "requests": 280,
+    "input_tokens": 2796892,
+    "max_input_tokens_per_request": 58495,
+    "usd": {
+     "standard_low": 16.793784000000002,
+     "batch_low": 8.396892000000001,
+     "standard_high": 33.593783999999985,
+     "batch_high": 16.796891999999993,
+     "standard_cap": 95.19378400000002,
+     "batch_cap": 47.59689200000001
+    },
+    "token_method": "approximation: tiktoken o200k_base x 1.3 (provider tokenizer note)",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 9988.9,
+    "developer": "Anthropic",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini38flash": {
+    "model": "gemini-3.8-flash",
+    "provider": "gemini",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 5.813588999999998,
+     "batch_low": 2.906794499999999,
+     "standard_high": 12.113588999999997,
+     "batch_high": 6.056794499999999,
+     "standard_cap": 35.21358899999998,
+     "batch_cap": 17.60679449999999
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "Google",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gpt54mini": {
+    "model": "gpt-5.4-mini-2026-03-17",
+    "provider": "openai",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 6.653589000000004,
+     "batch_low": 3.326794500000002,
+     "standard_high": 14.213589000000018,
+     "batch_high": 7.106794500000009,
+     "standard_cap": 41.93358899999995,
+     "batch_cap": 20.966794499999974
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "OpenAI",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "deepseekv4pro": {
+    "model": "deepseek-v4-pro",
+    "provider": "deepseek",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 7.275116640000009,
+     "batch_low": 3.6375583200000046,
+     "standard_high": 13.927916640000003,
+     "batch_high": 6.9639583200000015,
+     "standard_cap": 38.32151664000003,
+     "batch_cap": 19.160758320000014
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "DeepSeek",
+    "tier": "open",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "off-peak synchronous"
+   },
+   "kimik26": {
+    "model": "kimi-k2.6",
+    "provider": "moonshot",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 6.523879400000007,
+     "batch_low": 3.91432764,
+     "standard_high": 13.243879399999994,
+     "batch_high": 7.946327639999999,
+     "standard_cap": 37.88387940000001,
+     "batch_cap": 22.730327639999995
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "Moonshot AI",
+    "tier": "open",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   }
+  },
+  "total_usd": {
+   "standard_low": 173.65183953999997,
+   "batch_low": 87.47830770999998,
+   "standard_high": 364.32463953999996,
+   "batch_high": 183.48670770999996,
+   "standard_cap": 1063.4582395399998,
+   "batch_cap": 535.5175077099999
+  },
+  "requests": 2960,
+  "prices_checked": "2026-10-09",
+  "label": "J = 8: + Sonnet 5.5, Gemini 3.8 Flash, GPT-5.4 mini, DeepSeek V4 Pro, Kimi K2.6 on the confirmatory 140, R = 2",
+  "legs": [
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     1,
+     120
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "sonnet55",
+     "gemini38flash",
+     "gpt54mini",
+     "deepseekv4pro",
+     "kimik26"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   }
+  ]
+ },
+ "C_J8_lite": {
+  "per_judge": {
+   "opus45": {
+    "model": "claude-opus-4-5-20251101",
+    "provider": "anthropic",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 71.89810999999993,
+     "batch_low": 35.949054999999966,
+     "standard_high": 149.89810999999995,
+     "batch_high": 74.94905499999997,
+     "standard_cap": 435.89810999999986,
+     "batch_cap": 217.94905499999993
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Anthropic",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini31pro": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 32.919244000000006,
+     "batch_low": 16.459622000000003,
+     "standard_high": 70.35924399999998,
+     "batch_high": 35.17962199999999,
+     "standard_cap": 207.63924399999985,
+     "batch_cap": 103.81962199999992
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "Google",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gpt51": {
+    "model": "gpt-5.1-2025-11-13",
+    "provider": "openai",
+    "requests": 520,
+    "input_tokens": 3979622,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 25.7745275,
+     "batch_low": 12.88726375,
+     "standard_high": 56.97452750000002,
+     "batch_high": 28.48726375000001,
+     "standard_cap": 171.37452750000008,
+     "batch_cap": 85.68726375000004
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 2080000,
+    "output_tokens_high": 5200000,
+    "mean_input_tokens": 7653.119230769231,
+    "developer": "OpenAI",
+    "tier": "frontier",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "sonnet55": {
+    "model": "claude-sonnet-5-5",
+    "provider": "anthropic",
+    "requests": 210,
+    "input_tokens": 2064207,
+    "max_input_tokens_per_request": 58495,
+    "usd": {
+     "standard_low": 12.528414,
+     "batch_low": 6.264207,
+     "standard_high": 25.128413999999985,
+     "batch_high": 12.564206999999993,
+     "standard_cap": 71.32841400000001,
+     "batch_cap": 35.664207000000005
+    },
+    "token_method": "approximation: tiktoken o200k_base x 1.3 (provider tokenizer note)",
+    "output_tokens_low": 840000,
+    "output_tokens_high": 2100000,
+    "mean_input_tokens": 9829.557142857142,
+    "developer": "Anthropic",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gemini38flash": {
+    "model": "gemini-3.8-flash",
+    "provider": "gemini",
+    "requests": 210,
+    "input_tokens": 1587850,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 4.340887500000001,
+     "batch_low": 2.1704437500000004,
+     "standard_high": 9.065887499999997,
+     "batch_high": 4.5329437499999985,
+     "standard_cap": 26.390887499999998,
+     "batch_cap": 13.195443749999999
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 840000,
+    "output_tokens_high": 2100000,
+    "mean_input_tokens": 7561.190476190476,
+    "developer": "Google",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "gpt54mini": {
+    "model": "gpt-5.4-mini-2026-03-17",
+    "provider": "openai",
+    "requests": 210,
+    "input_tokens": 1587850,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 4.9708875000000035,
+     "batch_low": 2.4854437500000017,
+     "standard_high": 10.640887500000007,
+     "batch_high": 5.3204437500000035,
+     "standard_cap": 31.430887499999994,
+     "batch_cap": 15.715443749999997
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 840000,
+    "output_tokens_high": 2100000,
+    "mean_input_tokens": 7561.190476190476,
+    "developer": "OpenAI",
+    "tier": "mid",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   },
+   "deepseekv4pro": {
+    "model": "deepseek-v4-pro",
+    "provider": "deepseek",
+    "requests": 210,
+    "input_tokens": 1587850,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 5.422362000000005,
+     "batch_low": 2.7111810000000025,
+     "standard_high": 10.411962000000003,
+     "batch_high": 5.205981000000001,
+     "standard_cap": 28.70716199999999,
+     "batch_cap": 14.353580999999995
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 840000,
+    "output_tokens_high": 2100000,
+    "mean_input_tokens": 7561.190476190476,
+    "developer": "DeepSeek",
+    "tier": "open",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "off-peak synchronous"
+   },
+   "kimik26": {
+    "model": "kimi-k2.6",
+    "provider": "moonshot",
+    "requests": 210,
+    "input_tokens": 1587850,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 4.868457500000002,
+     "batch_low": 2.9210745000000005,
+     "standard_high": 9.908457499999999,
+     "batch_high": 5.945074499999999,
+     "standard_cap": 28.3884575,
+     "batch_cap": 17.033074499999994
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 840000,
+    "output_tokens_high": 2100000,
+    "mean_input_tokens": 7561.190476190476,
+    "developer": "Moonshot AI",
+    "tier": "open",
+    "runner_in_repo": true,
+    "price_derived": false,
+    "batch_mode": "Batch API"
+   }
+  },
+  "total_usd": {
+   "standard_low": 162.72288999999995,
+   "batch_low": 81.84829074999998,
+   "standard_high": 342.38748999999996,
+   "batch_high": 172.18459074999996,
+   "standard_cap": 1001.1576899999998,
+   "batch_cap": 503.4176907499999
+  },
+  "requests": 2610,
+  "prices_checked": "2026-10-09",
+  "label": "J = 8, cheaper: the 5 extra judges with R = 2 on positions 121-190 and R = 1 on 191-260",
+  "legs": [
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "opus45",
+     "gemini31pro",
+     "gpt51"
+    ],
+    "positions": [
+     1,
+     120
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "sonnet55",
+     "gemini38flash",
+     "gpt54mini",
+     "deepseekv4pro",
+     "kimik26"
+    ],
+    "positions": [
+     121,
+     190
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   },
+   {
+    "panel": [
+     "sonnet55",
+     "gemini38flash",
+     "gpt54mini",
+     "deepseekv4pro",
+     "kimik26"
+    ],
+    "positions": [
+     191,
+     260
+    ],
+    "repeats": [
+     1
+    ]
+   }
+  ]
+ },
+ "addon_gemma4": {
+  "per_judge": {
+   "gemma4": {
+    "model": "google/gemma-4-31B-it",
+    "provider": "deepinfra",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 0.8782903999999998,
+     "batch_low": 0.7026323200000001,
+     "standard_high": 1.5502904000000002,
+     "batch_high": 1.24023232,
+     "standard_cap": 4.014290400000002,
+     "batch_cap": 3.211432319999998
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "Google",
+    "tier": "open",
+    "runner_in_repo": false,
+    "price_derived": true,
+    "batch_mode": "Batch API"
+   }
+  },
+  "total_usd": {
+   "standard_low": 0.8782903999999998,
+   "batch_low": 0.7026323200000001,
+   "standard_high": 1.5502904000000002,
+   "batch_high": 1.24023232,
+   "standard_cap": 4.014290400000002,
+   "batch_cap": 3.211432319999998
+  },
+  "requests": 280,
+  "prices_checked": "2026-10-09",
+  "label": "Optional add-on: Gemma 4 31B (DeepInfra batch, derived price) on the confirmatory 140, R = 2",
+  "legs": [
+   {
+    "panel": [
+     "gemma4"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   }
+  ]
+ },
+ "addon_qwen38max": {
+  "per_judge": {
+   "qwen38max": {
+    "model": "accounts/fireworks/models/qwen3p8-max",
+    "provider": "fireworks",
+    "requests": 280,
+    "input_tokens": 2151452,
+    "max_input_tokens_per_request": 44996,
+    "usd": {
+     "standard_low": 11.022903999999995,
+     "batch_low": 5.511451999999998,
+     "standard_high": 21.102903999999985,
+     "batch_high": 10.551451999999992,
+     "standard_cap": 58.06290400000001,
+     "batch_cap": 29.031452000000005
+    },
+    "token_method": "approximation: tiktoken o200k_base",
+    "output_tokens_low": 1120000,
+    "output_tokens_high": 2800000,
+    "mean_input_tokens": 7683.757142857143,
+    "developer": "Alibaba Qwen",
+    "tier": "open",
+    "runner_in_repo": false,
+    "price_derived": true,
+    "batch_mode": "Batch API"
+   }
+  },
+  "total_usd": {
+   "standard_low": 11.022903999999995,
+   "batch_low": 5.511451999999998,
+   "standard_high": 21.102903999999985,
+   "batch_high": 10.551451999999992,
+   "standard_cap": 58.06290400000001,
+   "batch_cap": 29.031452000000005
+  },
+  "requests": 280,
+  "prices_checked": "2026-10-09",
+  "label": "Alternate open-weight judge: Qwen3.8 Max (Fireworks batch, derived price), confirmatory 140, R = 2",
+  "legs": [
+   {
+    "panel": [
+     "qwen38max"
+    ],
+    "positions": [
+     121,
+     260
+    ],
+    "repeats": [
+     1,
+     2
+    ]
+   }
+  ]
+ }
+}
