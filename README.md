@@ -4,7 +4,7 @@
 
 This is a measurement study of the LLM judges that score transcripts in [Petri](https://github.com/safety-research/petri), an open-source alignment-auditing tool. It does not ask the usual question, "how well do the judges agree?" (ICC, Krippendorff's α). It asks a more practical one: **how often would swapping the judge, or re-running it, flip the decision a Petri user actually makes?**
 
-> Status: a completed pilot with **cheap judges**, and a pre-registered main study that has **not yet been filed or run**. No result here is about Petri's official judges.
+> Status: a completed pilot with **cheap judges**, and a main study whose pre-registration is drafted but **not yet filed**; the study has not been run. No result here is about Petri's official judges.
 
 ## The question: φ versus ICC
 
